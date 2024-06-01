@@ -9,5 +9,12 @@ import work from "../assets/work.gif"
 import twitter from "../assets/twitter.gif"
 import profile from "../assets/profile.jpeg"
 import Linkdin from "../assets/lkdn.gif"
+import menu from "../assets/menu.gif"
+import cyborg from "../assets/cyborg.gif"
+import email from "../assets/email.gif"
+import call from "../assets/call.gif"
+import llm from "../assets/ai.gif"
+import maps from "../assets/maps.jpg"
+import realtimechat from "../assets/realtimechat.gif"
 
-export {work, explore, Bookcall, coding, github, js, programming, resume, twitter, profile, Linkdin}
+export {work, explore, Bookcall, coding, github, js, programming, resume, twitter, profile, Linkdin, menu, email, call, maps, llm, cyborg, realtimechat}
