@@ -22,16 +22,17 @@ const Explore = () => {
       });
   };
   return (
-    <div className="px-4 bg-black text-[#ffffff] w-full pt-32">
+    <div className="px-4 bg-black text-[#ffffff] w-full pt-32 lg:px-72">
       <div className="flex gap-2 items-center">
-        <div className="font-medium text-3xl flex">i'm an Engineer</div>
+        <div className="font-medium text-3xl flex lg:text-6xl">i'm an Engineer</div>
         <img src={cyborg} className="w-10 h-10 rounded-full" />
       </div>
-      <div className="font-medium text-3xl flex">
+      <div className="font-medium text-3xl flex lg:text-6xl">
         who build things from first principle.
       </div>
-      <div>
-        As, a full stack dev i've built <a>products</a> hands-on
+      <div className="mt-4">
+        As, a full stack dev i've built <a className="text-blue-400">products</a> hands-on
+
       </div>
 
       <div className="flex items-center font-sans">

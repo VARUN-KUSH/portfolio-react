@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 //import loadinggif from "../assets/icons8-explore.gif"
 import {
   explore,
@@ -28,10 +28,25 @@ import {
 }
 
 const Navbar = () => {
+  const [islargeScreen, setIsLargeScreen] = useState(false);
   const [menubuttonvalue, setMenubuttonvalue] = useState(false);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024);
+      console.log(window.innerWidth)
+    };
+
+    handleResize(); // Set the initial value
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+ 
+
   return (
     <div className="relative">
-      <div className="w-full -z-0 absolute flex justify-between bg-[#161616] text-white px-4 py-4 items-center">
+      <div className="lg:hidden w-full -z-0 absolute flex justify-between bg-[#161616] text-white px-4 py-4 items-center">
         <div className="flex gap-2 items-center">
           <div>
             <img
@@ -59,8 +74,8 @@ const Navbar = () => {
         </button>
       </div>
 
-      {menubuttonvalue ? (
-        <div className="absolute z-10 m-0 p-0">
+      {(menubuttonvalue || islargeScreen) && (
+        <div className="absolute z-10 h-lvh overflow-y-auto">
           <div className="flex flex-col snap-mandatory snap-y bg-black text-zinc-400 w-52 h-full px-8 py-8 gap-8 ">
             <div className="flex gap-4 justify-center items-center">
               <div className="">
@@ -163,8 +178,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      ) : (
-        ""
       )}
     </div>
   );

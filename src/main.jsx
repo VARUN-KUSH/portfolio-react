@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         element: <Stack />,
       },
       {
-        path: "/work",
+        path: "work",
         element: < Work/>
         
         
