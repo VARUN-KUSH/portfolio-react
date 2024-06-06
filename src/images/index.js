@@ -16,5 +16,11 @@ import call from "../assets/call.gif"
 import llm from "../assets/ai.gif"
 import maps from "../assets/maps.jpg"
 import realtimechat from "../assets/realtimechat.gif"
+import nextjs from "../assets/nextjs.svg"
+import tailwind from "../assets/tailwind.svg"
+import tools from "../assets/tools.gif"
+import openai from "../assets/openai.svg"
+import gemini from "../assets/gemini.svg"
+import react from "../assets/react.gif"
 
-export {work, explore, Bookcall, coding, github, js, programming, resume, twitter, profile, Linkdin, menu, email, call, maps, llm, cyborg, realtimechat}
+export {work, explore, Bookcall, coding, github, js, programming, resume, twitter, profile, Linkdin, menu, email, call, maps, llm, cyborg, realtimechat, nextjs, tailwind, tools, openai, gemini, react}
