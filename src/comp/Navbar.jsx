@@ -76,7 +76,7 @@ const Navbar = () => {
 
       {(menubuttonvalue || islargeScreen) && (
         <div className="absolute z-10 h-lvh overflow-y-auto">
-          <div className="flex flex-col snap-mandatory snap-y bg-black text-zinc-400 w-52 h-full px-8 py-8 gap-8 ">
+          <div className="flex flex-col snap-mandatory snap-y bg-black text-zinc-400 w-52 h-full px-8 py-8 gap-12 ">
             <div className="flex gap-4 justify-center items-center">
               <div className="">
                 <img
